@@ -1,5 +1,5 @@
 import { Button, Stack, Typography, CircularProgress, Backdrop } from '@mui/material'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Header from '../../components/Header'
 
 import { useNavigate, useParams } from 'react-router-dom'
@@ -144,7 +144,7 @@ const Upload = () => {
 
   const handleSubmit = () => {
     setProgress(true)
-    axios.post("http://localhost:4545/videos/", {
+    axios.post("https://video-tv.onrender.com/videos/", {
       title: title,
       description: description,
       thumbnailUrl: thumbnail,

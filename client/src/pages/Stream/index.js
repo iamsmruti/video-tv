@@ -10,7 +10,7 @@ const Stream = () => {
   const { id } = useParams()
 
   useEffect(() => {
-    axios.get(`http://localhost:4545/videos/${id}`).then((res) => {
+    axios.get(`https://video-tv.onrender.com/videos/${id}`).then((res) => {
       setVideo(res.data)
     })
   }, [id])

@@ -8,7 +8,7 @@ const RecomendationSection = () => {
   const [videos, setVideos] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:4545/videos/").then((res) => {
+    axios.get("https://video-tv.onrender.com/videos/").then((res) => {
       setVideos(res.data)
     })
   }, [])

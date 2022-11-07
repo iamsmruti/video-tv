@@ -10,7 +10,7 @@ const app = express()
 dotenv.config()
 
 app.use(cors({
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:3000', "https://video-tv.vercel.app"],
     credentials: true,
 }));
 
