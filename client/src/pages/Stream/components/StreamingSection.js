@@ -4,8 +4,6 @@ import { Stack } from '@mui/system'
 
 import ReactPlayer from 'react-player/lazy'
 
-import { Helmet } from "react-helmet";
-
 const StreamingSection = ({ video }) => {
   return (
     <Grid item xs={12} md={8}>
