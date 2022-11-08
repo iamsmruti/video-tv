@@ -12,7 +12,7 @@ const CardHorizontal = ({video}) => {
     return (
         <Link to={`/${video._id}`}>
             <Stack style={customCard}>
-                {(video?. thumbnailUrl && (video?. thumbnailUrl).substring(0,1) === "h" ) ? <img style={{ borderRadius: '15px', height: '80px' }} src={video.thumbnailUrl} /> : <Box sx={{width: '150px', height: '80px', bgcolor: 'lightgray', borderRadius: '15px'}}></Box>}
+                {(video?. thumbnailUrl && (video?. thumbnailUrl).substring(0,1) === "h" ) ? <img style={{ borderRadius: '15px', width: '150px' }} src={video.thumbnailUrl} /> : <Box sx={{width: '150px', height: '80px', bgcolor: 'lightgray', borderRadius: '15px'}}></Box>}
 
                 <Stack sx={{ px: 1 }}>
                     <Typography sx={{

@@ -14,7 +14,7 @@ const Card = ({ video }) => {
     return (
         <Link to={`/${video._id}`}>
             <Stack style={customCard}>
-                <img style={{ borderRadius: '15px', height: '170px' }} src={video.thumbnailUrl} />
+                <img style={{ borderRadius: '15px', height: {md: 170, xs: 'auto'} }} src={video.thumbnailUrl} />
 
                 <Stack sx={{ mt: 2, px: 1 }}>
                     <Typography sx={{
