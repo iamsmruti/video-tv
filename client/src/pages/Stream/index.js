@@ -4,13 +4,14 @@ import RecomendationSection from './components/RecomendationSection'
 import StreamingSection from './components/StreamingSection'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { api } from '../../constants'
 
 const Stream = () => {
   const [video, setVideo] = useState({})
   const { id } = useParams()
 
   useEffect(() => {
-    axios.get(`https://video-tv.onrender.com/videos/${id}`).then((res) => {
+    axios.get(`${api}/videos/${id}`).then((res) => {
       setVideo(res.data)
     })
   }, [id])

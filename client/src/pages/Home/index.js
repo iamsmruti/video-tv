@@ -4,12 +4,13 @@ import axios from 'axios'
 
 import Card from './components/Card'
 import Header from '../../components/Header'
+import { api } from '../../constants'
 
 const Home = () => {
   const [videos, setVideos] = useState([])
 
   useEffect(() => {
-    axios.get("https://video-tv.onrender.com/videos/").then((res) => {
+    axios.get(`${api}/videos/`).then((res) => {
       setVideos(res.data)
       console.log(res.data)
     })

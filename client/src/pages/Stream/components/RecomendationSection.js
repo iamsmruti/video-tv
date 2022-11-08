@@ -3,12 +3,13 @@ import { Grid } from '@mui/material'
 import CardHorizontal from './CardHorizontal'
 
 import axios from 'axios'
+import { api } from '../../../constants'
 
 const RecomendationSection = () => {
   const [videos, setVideos] = useState([])
 
   useEffect(() => {
-    axios.get("https://video-tv.onrender.com/videos/").then((res) => {
+    axios.get(`${api}/videos/`).then((res) => {
       setVideos(res.data)
     })
   }, [])

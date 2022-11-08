@@ -1,0 +1,1 @@
+export const api = "https://video-tv-api.vercel.app"

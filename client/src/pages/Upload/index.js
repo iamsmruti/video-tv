@@ -5,6 +5,7 @@ import Header from '../../components/Header'
 import { useNavigate, useParams } from 'react-router-dom'
 
 import axios from 'axios'
+import { api } from '../../constants'
 
 const Upload = () => {
   const [thumbnail, setThumbnail] = useState('')
@@ -144,7 +145,7 @@ const Upload = () => {
 
   const handleSubmit = () => {
     setProgress(true)
-    axios.post("https://video-tv.onrender.com/videos/", {
+    axios.post(`${api}/videos/`, {
       title: title,
       description: description,
       thumbnailUrl: thumbnail,
