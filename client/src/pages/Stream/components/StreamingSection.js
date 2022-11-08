@@ -18,7 +18,7 @@ const StreamingSection = ({ video }) => {
         <Typography variant='body2'>{video.description}</Typography>
       </Stack>
 
-      <div id="container-0852199bfd2b4eeb91bb09d1d9b764a1"></div>
+      <div key={"ad-unit-2"} id="container-0852199bfd2b4eeb91bb09d1d9b764a1"></div>
     </Grid>
   )
 }
