@@ -20,44 +20,7 @@ const StreamingSection = ({ video }) => {
         <Typography variant='body2'>{video.description}</Typography>
       </Stack>
 
-      <Helmet>
-        <script>
-          {
-            //<![CDATA[ 
-              (function() {
-                var configuration = {
-                  "token": "73655865aa3ff1ba36c01d4c1aa199ef",
-                  "excludeDomains": [
-                      ""
-                  ],
-                  "capping": {
-                      "limit": 5,
-                      "timeout": 24
-                  },
-                  "entryScript": {
-                      "type": "timeout",
-                      "timeout": 3000,
-                      "capping": {
-                          "limit": 5,
-                          "timeout": 24
-                      }
-                  }
-              };
-                  var script = document.createElement('script');
-                  script.async = true;
-                  script.src = 'https://cdn.shorte.st/link-converter.min.js';
-                  script.onload = script.onreadystatechange = function () {
-                    var rs = this.readyState; 
-                    if (rs && rs != 'complete' && rs != 'loaded') 
-                      return; 
-                    this.shortestMonetization(configuration);};
-                  var entry = document.getElementsByTagName('script')[0];
-                  entry.parentNode.insertBefore(script, entry);
-              })()
-            //]]>
-          }
-        </script>
-      </Helmet>
+      <div id="container-0852199bfd2b4eeb91bb09d1d9b764a1"></div>
     </Grid>
   )
 }

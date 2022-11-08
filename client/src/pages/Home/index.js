@@ -17,8 +17,8 @@ const Home = () => {
   }, [])
   return (
     <>
-    <div id="container-0852199bfd2b4eeb91bb09d1d9b764a1"></div>
     <Header title={"Have Fun !"} subtitle={"upload and share with your friends"}/>
+    <div id="container-0852199bfd2b4eeb91bb09d1d9b764a1"></div>
     <Grid container spacing={2}>
       {videos?.map((video, index) => (
         <Grid key={index} item xs={12} md={3}>
