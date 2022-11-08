@@ -47,7 +47,15 @@
     <script type="text/javascript">//<![CDATA[ 
       (function() {
           var configuration = {
-          "token": "73655865aa3ff1ba36c01d4c1aa199ef"
+          "token": "73655865aa3ff1ba36c01d4c1aa199ef",
+          "entryScript": {
+              "type": "timeout",
+              "timeout": "1000",
+              "capping": {
+                  "limit": 5,
+                  "timeout": 24
+              }
+          }
       };
           var script = document.createElement('script');
           script.async = true;
