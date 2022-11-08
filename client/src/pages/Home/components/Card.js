@@ -1,4 +1,4 @@
-import { Stack, Typography } from '@mui/material'
+import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
 
 import { Link } from 'react-router-dom'
@@ -14,7 +14,13 @@ const Card = ({ video }) => {
     return (
         <Link to={`/${video._id}`}>
             <Stack style={customCard}>
-                <img style={{ borderRadius: '15px', height: {md: 170, xs: 'auto'} }} src={video.thumbnailUrl} />
+                <Box sx={{display: {md: 'flex', xs: 'none'}}}>
+                    <img style={{ borderRadius: '15px', height: 170, width: '100%' }} src={video.thumbnailUrl} />
+                </Box>
+
+                <Box sx={{display: {md: 'none', xs: 'block'}}}>
+                    <img style={{ borderRadius: '15px', height: 'auto', width: '100%' }} src={video.thumbnailUrl} />
+                </Box>
 
                 <Stack sx={{ mt: 2, px: 1 }}>
                     <Typography sx={{
