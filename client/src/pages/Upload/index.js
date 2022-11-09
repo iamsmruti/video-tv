@@ -182,7 +182,6 @@ const Upload = () => {
       >
         <CircularProgress color="inherit" />
       </Backdrop>
-      <div key={"ad-unit-3"} id="container-0852199bfd2b4eeb91bb09d1d9b764a1"></div>
     </>
   )
 }
